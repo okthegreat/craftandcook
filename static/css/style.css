@@ -505,3 +505,8 @@ h3 {
         align-items: center; /* Center cards */
     }
 }
+@media (max-width: 768px) {
+    .logo {
+        display: none; /* Hide the logo on mobile */
+    }
+}
