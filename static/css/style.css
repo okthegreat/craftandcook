@@ -453,4 +453,55 @@ h3 {
 .ui-helper-hidden-accessible {
     display: none; /* Hides accessibility text */
 }
- 
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Add padding for smaller screens */
+    }
+
+    .plate-image {
+        width: 50%; /* Adjust plate image size */
+        left: 0; /* Center the images */
+        right: 0;
+        top: 50%; /* Center vertically */
+        transform: translate(-50%, -50%); /* Center the images */
+    }
+
+    .hero-content {
+        padding: 20px; 
+    }
+
+    h1 {
+        font-size: 16px; 
+    }
+
+    .tagline {
+        font-size: 16px; 
+        text-align: center;
+    }
+
+    .search-container {
+        flex-direction: column; /* Stack input and button */
+        max-width: 100%; /* Full width */
+    }
+
+    #ingredient-input {
+        width: 100%; /* Full width input */
+        margin-bottom: 10px; /* Space between input and button */
+    }
+
+    #search-recipe {
+        width: 100%; /* Full width button */
+    }
+
+    .recipe-preview-card {
+        width: 100%; /* Full width for recipe cards */
+        margin: 10px 0; /* Space between cards */
+    }
+
+    .recipe-list {
+        flex-direction: column; /* Stack recipe cards */
+        align-items: center; /* Center cards */
+    }
+}
